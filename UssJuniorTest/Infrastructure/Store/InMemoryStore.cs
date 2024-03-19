@@ -5,7 +5,6 @@ namespace UssJuniorTest.Infrastructure.Store;
 /// <summary>
 /// Реализация хранилища в памяти приложения. Эмуляция БД.
 /// </summary>
-/// <remarks>ДАННЫЙ КЛАСС НЕ ИЗМЕНЯТЬ.</remarks>
 internal sealed class InMemoryStore : IStore
 {
     public IQueryable<Car> GetAllCars() => _carObjects.AsQueryable();
